@@ -1,0 +1,14 @@
+{% extends 'layouts/dashboard.html.twig' %}
+
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+    <p class="eyebrow">Overview</p>
+    <h1 class="page-title">Welcome back, Jayvee.</h1>
+
+    <section class="stats">
+        <div class="stat"><span>Registered</span><b>12</b></div>
+        <div class="stat stat--lost"><span>Reported lost</span><b>2</b></div>
+        <div class="stat stat--ok"><span>Warranty active</span><b>3</b></div>
+    </section>
+{% endblock %}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Yonzon{% endblock %}</title>
+    <link rel="icon" href="{{ asset('images/logo.png') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+</head>
+<body>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

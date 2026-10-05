@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% block page_title %}Dashboard{% endblock %} · Yonzon{% endblock %}
+
+{% block body %}
+<div class="app">
+    {% include 'dashboard/_sidebar.html.twig' %}
+
+    <div class="app__main">
+        {% include 'dashboard/_topbar.html.twig' %}
+
+        <main class="app__content">
+            {% block content %}{% endblock %}
+        </main>
+
+        {% include 'dashboard/_footer.html.twig' %}
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script>
+    document.querySelector('[data-toggle]')?.addEventListener('click', () => document.body.classList.toggle('open'));
+    document.querySelector('[data-overlay]')?.addEventListener('click', () => document.body.classList.remove('open'));
+</script>
+{% endblock %}
